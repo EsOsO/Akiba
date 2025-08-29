@@ -1,6 +1,6 @@
-# Contributing to self-stack
+# Contributing to Akiba
 
-Thank you for your interest in contributing to self-stack! This project aims to provide a modular, secure, and extensible Docker Compose environment for homelab users. Your contributions help make it better for everyone.
+Thank you for your interest in contributing to Akiba! This project aims to provide a modular, secure, and extensible Docker Compose environment for homelab users. Your contributions help make it better for everyone.
 
 ## How to Contribute
 
@@ -35,4 +35,4 @@ Thank you for your interest in contributing to self-stack! This project aims to 
 - Suggestions and feedback are always welcome!
 
 ---
-For more details, see the [Wiki](https://github.com/EsOsO/self-stack/wiki) and other docs in the `doc/` folder.
+For more details, see the [Wiki](https://github.com/EsOsO/akiba/wiki) and other docs in the `doc/` folder.
