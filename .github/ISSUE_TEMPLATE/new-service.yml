@@ -1,0 +1,54 @@
+name: 🚀 New Service Request
+description: Propose adding a new service to the Akiba stack
+title: "[Service Request] <service name>"
+labels: ["enhancement", "service"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Request a New Service
+
+        Please fill out the details below to propose a new service for the Akiba homelab stack.
+  - type: input
+    id: service-name
+    attributes:
+      label: Service Name
+      description: What is the name of the service?
+      placeholder: ex. Nextcloud
+    validations:
+      required: true
+  - type: textarea
+    id: service-description
+    attributes:
+      label: Service Description
+      description: What does this service do? Why is it useful for homelab users?
+    validations:
+      required: true
+  - type: textarea
+    id: service-features
+    attributes:
+      label: Key Features
+      description: List the main features or use cases for this service.
+    validations:
+      required: false
+  - type: textarea
+    id: integration-notes
+    attributes:
+      label: Integration Notes
+      description: How should this service integrate with the existing stack (e.g., networks, Traefik, Authelia, storage)?
+    validations:
+      required: false
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Links to official docs, Docker images, or similar projects.
+    validations:
+      required: false
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I have checked that this service is not already included in the stack.
+        - label: I have reviewed the [contribution guidelines](../../CONTRIBUTING.md) if available.

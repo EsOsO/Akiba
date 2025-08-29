@@ -1,0 +1,57 @@
+name: 🐛 Service Problem Report
+description: Report a bug or issue with an existing service
+title: "[Bug] <service name>: <short description>"
+labels: ["bug", "service"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Service Problem Report
+
+        Please provide as much detail as possible to help us resolve the issue.
+  - type: input
+    id: service-name
+    attributes:
+      label: Service Name
+      description: Which service is affected?
+      placeholder: ex. Traefik
+    validations:
+      required: true
+  - type: textarea
+    id: problem-description
+    attributes:
+      label: Problem Description
+      description: What is the issue? Include error messages, logs, or screenshots if possible.
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce the problem?
+    validations:
+      required: false
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment Details
+      description: |
+        - OS and version
+        - Docker and Compose versions
+        - Any relevant environment variables or configuration
+    validations:
+      required: false
+  - type: textarea
+    id: attempted-fixes
+    attributes:
+      label: Attempted Fixes
+      description: What have you tried so far?
+    validations:
+      required: false
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I have searched for similar issues.
+        - label: I have provided all relevant logs and configuration.

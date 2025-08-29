@@ -1,0 +1,39 @@
+name: 💡 Best Practice Suggestion
+description: Suggest a new best practice or improvement for the stack
+title: "[Best Practice] <short description>"
+labels: ["enhancement", "best-practice"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Suggest a New Best Practice
+
+        Help us improve the Akiba stack by suggesting new patterns, workflows, or conventions.
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggestion
+      description: What best practice or improvement do you propose?
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale
+      description: Why is this best practice important? How does it benefit the project or users?
+    validations:
+      required: true
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Implementation Ideas
+      description: How could this be implemented in the current stack? Reference files, workflows, or tools if possible.
+    validations:
+      required: false
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I have checked for similar suggestions.
+        - label: I have reviewed the [README](../../README.md) and [copilot-instructions.md](../copilot-instructions.md)
