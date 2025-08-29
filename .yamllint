@@ -1,0 +1,7 @@
+---
+extends: default
+rules:
+  key-ordering: {}
+  line-length:
+    allow-non-breakable-inline-mappings: true
+    level: warning
