@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "compose.yaml": "dockercompose"
+    },
+    "github.copilot.chat.commitMessageGeneration.instructions": [
+        {
+            "file": ".github/copilot-commit-message-instructions.md"
+        },
+    ],
+    "linter.linters": {
+        "yamllint": {
+            "enabled": true,
+            "languages": [
+                "yaml",
+                "dockercompose"
+            ]
+        }
+    },
+}
