@@ -1,0 +1,7 @@
+{
+    "$schema": "vscode://schemas/extensions",
+    "recommendations": [
+        "fnando.linter",
+        "redhat.vscode-yaml"
+    ]
+}
